@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe's Paws and Walks | Professional Pet Care Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./cropped_circle_image.png" alt="logo" />
+          <span>Joe's Paws and Walks</span>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="btn" id="bookNowBtn">Book Now</button>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Happy Pets, Happy Owners!</h1>
+        <p>
+          Professional grooming, daycare, and pet care services in your
+          neighborhood.
+        </p>
+        <button class="btn" id="heroBookBtn">Book an Appointment</button>
+      </div>
+      <div class="hero-img">
+        <img src="./dog.jpg" alt="Happy Dog" />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>
+          We offer comprehensive pet care services to keep your furry friends
+          happy and healthy
+        </p>
+      </div>
+      <div class="service-cards">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Pet Grooming</h3>
+          <p>
+            Professional grooming to keep your pets looking and feeling their
+            best with our gentle approach.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-dog"></i>
+          </div>
+          <h3>Dog Walking</h3>
+          <p>
+            Daily walks to keep your dogs healthy, happy, and well-exercised
+            with our certified walkers.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+          <h3>Pet Daycare</h3>
+          <p>
+            A safe and fun environment for your pets while you're away, with
+            supervised play and care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>Get to know our passion and mission for pet care</p>
+      </div>
+      <div class="about-content">
+        <div class="about-item">
+          <div class="about-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>What is Joe's Paws & Walks?</h3>
+          <p>
+            Hello! Welcome to Joe's Paws & Walks. We are here to help corporate
+            professionals and elderly pet owners by providing daily walks and
+            care for their furry companions. We believe every pet deserves to
+            enjoy their life with joy, love, and proper exercise.
+          </p>
+        </div>
+        <div class="about-item">
+          <div class="about-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3>Why Choose Joe's Paws & Walks?</h3>
+          <p>
+            Our team is passionate about pets and genuinely loves animals. This
+            passion helps us stay positive and create a relaxing environment for
+            your furry friends. We're also proud to support our community while
+            doing what we love.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any questions or to schedule services</p>
+      </div>
+      <div class="contact-wrapper">
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>contact@joespawwalks.com</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(555) 123-4567</span>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon-Fri: 8am-6pm, Sat: 9am-4pm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Popup -->
+    <div id="bookingPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Book an Appointment</h2>
+        <p>Fill out the form below to schedule your pet's service</p>
+
+        <form id="bookingForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="bookingName"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="bookingEmail"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="tel"
+              id="bookingPhone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <select id="bookingService" name="service" required>
+              <option value="">Select Service</option>
+              <option value="Pet Grooming">Pet Grooming</option>
+              <option value="Dog Walking">Dog Walking</option>
+              <option value="Pet Daycare">Pet Daycare</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input type="date" id="bookingDate" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <input type="time" id="bookingTime" name="time" required />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="bookingNotes"
+              name="notes"
+              placeholder="Additional Notes (optional)"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="./cropped_circle_image.png"
+            alt="Joe's Paws and Walks Logo"
+          />
+          <div>
+            <h3>Joe's Paws and Walks</h3>
+            <p>Professional Pet Care Services</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a
+            href="https://www.instagram.com/joespawwalks/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Joe's Paws and Walks. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
